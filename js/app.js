@@ -10,6 +10,9 @@ app.controller("myctrl", function($scope) {
         "Shahid Khan",
         "Gokul"
     ];
+    $scope.fee= 1000;
+    $scope.today= new Date();
+    $scope.search = "";
     });
 app.directive("collegeinfo", 
     function() {
