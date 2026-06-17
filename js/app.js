@@ -1,5 +1,6 @@
 var app =angular.module('myapp', []);
-app.controller("myctrl", function($scope) {
+app.controller("myctrl", function($scope,collegeservice) {
+    $scope.collegename = collegeservice.college;
     $scope.studentname = "";
     $scope.count = 0;
     $scope.isloggedin = true;
@@ -20,8 +21,12 @@ return{
     restrict: "E",
     template: "<h3>College information</h3>"
 
-}});
+}
 
-
-
-
+});
+app.service(
+    "collegeservice",
+    function() {
+        this.college = "Fisat";
+    }
+);
