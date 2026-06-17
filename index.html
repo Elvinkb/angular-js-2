@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <title>Directives demo</title>
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body ng-controller="myctrl">
+    <h1>AngularJS Directives Demo</h1>
+    <h2>ng-model</h2>
+    <input type="text" ng-model="studentname" placeholder="Enter your name">
+    <p>Hello, {{studentname}}!</p>
+    <button ng-click="count = count + 1">Click me</button>
+    <p>You have clicked the button {{count}} times.</p>
+    <p ng-hide="isloggedin">The user is logged in.</p>
+    <h2>
+        ng-repeat Example
+
+    </h2>
+    <ul>
+        <li ng-repeat="student in students">
+            {{student}}
+        </li>
+    </ul>
+</body>
+</html>
