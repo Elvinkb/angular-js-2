@@ -10,6 +10,15 @@ app.controller("myctrl", function($scope) {
         "Shahid Khan",
         "Gokul"
     ];
+    });
+app.directive("collegeinfo", 
+    function() {
+return{
+    restrict: "E",
+    template: "<h3>College information</h3>"
+
+}});
 
 
-})
+
+
